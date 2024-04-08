@@ -115,17 +115,61 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 	<style>
-	.main {
+	body {
     margin:10% auto;
     padding-left:40%;
+    background-color: ;
 
     }
+    .calculator {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .calculator input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 24px;
+            padding: 10px;
+            text-align: right;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .calculator input[type="submit"] {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .calculator input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Additional styles for specific buttons */
+        .calculator input[type="submit"].operator {
+            background-color: #ff8c00; /* Orange for operator buttons */
+            color: #fff;
+        }
+
+        .calculator input[type="submit"].equals {
+            background-color: #4caf50; /* Green for equals button */
+            color: #fff;
+        }
 	</style>
 </head>
 <body>
+<h3>MY CALCULATOR</h3>
 	<div class="main">
-
-
+        
 
 <div style="border: 1px solid #ccc; border-radius: 3px; padding: 5px; display: inline-block">
     <form method="post" id="form">

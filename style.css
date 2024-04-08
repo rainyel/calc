@@ -1,0 +1,51 @@
+.main {
+    margin: 10% auto;
+    width: 300px; /* Added width for the calculator */
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+}
+
+.calculator input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-radius: 3px;
+}
+
+.calculator input[type="submit"] {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* Additional styles for specific buttons */
+.calculator input[type="submit"].operator {
+    background-color: #ff8c00; /* Orange for operator buttons */
+    color: #fff;
+}
+
+.calculator input[type="submit"].equals {
+    background-color: #4caf50; /* Green for equals button */
+    color: #fff;
+}
